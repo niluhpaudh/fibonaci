@@ -17,11 +17,14 @@ public class Fibonaci {
     /**
      * @param args the command line arguments
      */
+     //a
     public static void main(String[] args) {
         
         Scanner s = new Scanner(System.in);
         int a=24;
         int y=0;
+        int z=0;
+         int tmp=0;
         long  f[] = new long[a];
         f[0] = 0;
         f[1] = 1;
@@ -31,10 +34,14 @@ public class Fibonaci {
              for(int i=2; i<=y; i++){
              f[i]=f[i-1]+f[i-2];
              }
-                  
-             for(int i=0; i<=y; i++){
-                 System.out.println(f[i] +" ");
+               
+             for(int i=1; i<=y; i++){
+                
+                 
+                 z=f[i];
+            tmp = tmp +z;
+            
              }
-        
+             System.out.println(tmp);
     }
 }
