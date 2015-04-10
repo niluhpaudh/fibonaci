@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package fibonaci;
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author Praktikum
+ */
+public class Fibonaci {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner s = new Scanner(System.in);
+        int a=24;
+        int y=0;
+        long  f[] = new long[a];
+        f[0] = 0;
+        f[1] = 1;
+        System.out.print("Input : ");
+        y=s.nextInt();
+        System.out.println("output : ");
+             for(int i=2; i<=y; i++){
+             f[i]=f[i-1]+f[i-2];
+             }
+                  
+             for(int i=0; i<=y; i++){
+                 System.out.println(f[i] +" ");
+             }
+        
+    }
+}
